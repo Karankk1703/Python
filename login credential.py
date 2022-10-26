@@ -1,7 +1,7 @@
 import csv
 import re
 
-fileName = "UserDetailsFile.csv"
+fileName = "E:\python\Karanpycharm/UserDetailsFile.csv"
 def GetUserDetails():
     global userName
     global password
@@ -75,6 +75,7 @@ def WriteCSV():
     with open(fileName,'a', newline='') as csvfile:
         csvWriter = csv.writer(csvfile)
         csvWriter.writerow(row)
+        print(row)
         csvfile.close()
 def ReadCSV():
     with open(fileName, 'r') as csvfile:
